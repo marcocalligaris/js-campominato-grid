@@ -51,7 +51,6 @@ footer {
     height: 700px;
     display: flex;
     flex-wrap: wrap;
-    /* display: none; */
 }
 
 .cell {

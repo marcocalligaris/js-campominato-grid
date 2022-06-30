@@ -18,7 +18,7 @@ button.addEventListener('click', function() {
 
         cell.addEventListener('click', function () {
             console.log('Hai cliccato la cella numero ' + [i])
-            cell.classList.toggle('clicked');
+            cell.classList.add('clicked');
         })
     } 
 })
