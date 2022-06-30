@@ -61,6 +61,8 @@ footer {
     align-items: center;
     width: calc(100% / 10);
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #grid .cell.clicked {

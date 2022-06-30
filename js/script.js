@@ -4,9 +4,10 @@
 // Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
 
 // * Funzioni
-function createNewCell() {
+function createNewCell(content) {
     const newcell = document.createElement('div');
     newcell.classList.add('cell');
+    newcell.innerText = content;
     return newcell;
 }
 
@@ -23,8 +24,9 @@ const gridCells = rows * cells;
 
 // * Al click sul bottone, si genera la griglia
 button.addEventListener('click', function() {
-    for(let i = 0; i < gridCells; i++) {
-        const cell = createNewCell();
+    for(let i = 1; i <= gridCells; i++) {
+        const cell = createNewCell(i);
         grid.appendChild(cell);
+        
     }
 })
